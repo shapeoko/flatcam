@@ -1,0 +1,18 @@
+FLATCAM
+
+A simple command-line tool to generate gcode from a dxf-file. The goal is to have a nice 2D CAM-script for using a CNC-routers to cut sheets like you would normally use a laser cutter. It will automatically infer what side of a path the tool should cut along and generate the appropriate offset paths. No configuration beyond the diameter of the bit should be necessary.
+
+This software is in the public domain.
+
+Status: 
+  - imports most dxf files
+  - really only supports straight lines
+  - can make a reasonably effective milling-plan and generate gcode
+  
+Plans:
+  - add full support for arcs and circles
+  - detect loops and generate containment hierarchy to support tool-offset-inference
+  - support automatic inference and generation of offset tool-paths
+  - improve planner marginally
+  - raise and lower tool properly between cuts
+  
